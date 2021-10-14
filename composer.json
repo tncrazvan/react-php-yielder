@@ -1,0 +1,39 @@
+{
+  "name": "razshare/react-php-yielder",
+  "description": "A simple library that converts Generators into PromiseInterfaces for ReactPhp.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Razvan Tanase",
+      "email": "tangent.jotey@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "react/promise": "2.8.0",
+    "react/event-loop": "1.2.0",
+    "react/http": "1.5.0"
+  },
+  "require-dev": {
+    "react/stream": "1.2.0",
+    "react/promise-stream": "1.2.0"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+      "Razshare\\ReactPhp\\Yielder\\": [
+        "src/"
+      ]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RazshareExamples\\ReactPhp\\Yielder\\": [
+        "examples/"
+      ]
+    }
+  }
+}
