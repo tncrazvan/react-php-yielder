@@ -1,13 +1,13 @@
 This library provides an more fluent api to work with promisses and generators inside the [ReactPhp](https://reactphp.org/) event loop.
 
 ```php
-    \Razshare\ReactPhp\Yielder\Yielder::run(function(){
-        $result = yield new \React\Promise\Promise(function($r){
-            $r("hello world");        
-        });
-        
-        echo $result.PHP_EOL;
+\Razshare\ReactPhp\Yielder\Yielder::run(function(){
+    $result = yield new \React\Promise\Promise(function($r){
+        $r("hello world");        
     });
+    
+    echo $result.PHP_EOL;
+});
 ```
 
 This is just a piece of code that simply prints "hello world" from a promise.
