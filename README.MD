@@ -1,4 +1,4 @@
-This library provides an more fluent api to work with promisses and generators inside the [ReactPhp](https://reactphp.org/) event loop.
+This library provides a fluent api to work with promisses and generators inside the [ReactPhp](https://reactphp.org/) event loop.
 
 ```php
 \Razshare\ReactPhp\Yielder\Yielder::run(function(){
