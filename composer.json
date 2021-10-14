@@ -12,12 +12,12 @@
   "require": {
     "php": ">=8.0",
     "react/promise": "2.8.0",
-    "react/event-loop": "1.2.0",
-    "react/http": "1.5.0"
+    "react/event-loop": "1.2.0"
   },
   "require-dev": {
     "react/stream": "1.2.0",
-    "react/promise-stream": "1.2.0"
+    "react/promise-stream": "1.2.0",
+    "react/http": "1.5.0"
   },
   "config": {
     "preferred-install": "dist"
