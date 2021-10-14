@@ -84,9 +84,9 @@ class Yielder {
 	}
 
 	/**
-	 * Convert a \Generator to a ractphp PromiseInterface.
+	 * Converts a Generator into a PromiseInterface.
 	 * @param Generator $value the generator to convert.
-	 * @return Promise a promise that will be resolved whenever the generator is consumed by the reactphp loop.
+	 * @return Promise a promise that will be resolved whenever the generator is consumed by the event loop.
 	 */
 	public static function toPromise(Generator $value): PromiseInterface {
 		return new Promise(function ($r) use (&$value) {
@@ -95,10 +95,10 @@ class Yielder {
 	}
 
 	/**
-	 * Run a callback inside the event loop.
+	 * Runs a normal callback or a generator inside the event loop.
 	 * @param Generator|Closure $callback
 	 * @param bool $runLoop
-	 * @return Generator
+	 * @return void
 	 */
 	public static function run(Generator|Closure $callback, bool $runLoop = true): void {
 

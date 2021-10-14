@@ -53,5 +53,4 @@ Yielder::run(function () {
 	/** @var ResponseInterface $response */
 	$response = yield $client->get('http://www.twitter.com/');
 	echo "Generator - Twitter: ".sha1($response->getBody()) . PHP_EOL;
-
 });
